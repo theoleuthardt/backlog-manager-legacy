@@ -6,7 +6,7 @@ import { parseApiUrl } from "./src/lib/apiUrl.ts";
 import { THEME_CACHE_KEY } from "./src/lib/themes.ts";
 
 const src = path.resolve(import.meta.dirname, "src");
-const envDir = path.resolve(import.meta.dirname, "..");
+const envDir = import.meta.dirname;
 
 const themeBootScript = (): Plugin => ({
   name: "theme-boot-script",
